@@ -51,5 +51,5 @@
 
 `docker run -v "local/directory:docker/directory" <imagem>` -> cria um volume do diretório local para o container
 
-`docker run -d -p 8080:3000 -v "$(pwd):/var/www" -w "/var/www" node npm start` ->
+`docker run -d -p 8080:3000 -v "$(pwd):/var/www" -w "/var/www" <imagem> node npm start` ->
 ^roda em segundo plano (-d) na porta 8080:3000 (-p) criando volume (-v) executando na pasta /var/www (-w) o comando node npm start
