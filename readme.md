@@ -6,6 +6,7 @@
 
 `docker ps -a` -> lista todos os containers (mesmo não em execução)
 
+
 ## Rodando imagens/containers
 
 `docker run <image_name>` -> baixa e executa a imagem do container
@@ -39,11 +40,17 @@
 
 `docker container prune` -> remove todos os containers que não estão em execução
 
+
 ## Imagens
 
 `docker images` -> lista imagens baixadas
 
 `docker rmi` -> remove imagem baixada
+
+`docker build -t DockehubUsername/imagename .` -> builda uma imagem a partir de um Dockerfile
+
+`docker tag DockehubUsername/imagename:tag` -> cria uma tag para a imagem
+
 
 ## Volumes:
 
